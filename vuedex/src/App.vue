@@ -41,7 +41,8 @@ export default {
       weight: 0,	
       height: 0,
       abilities: [],
-      data: {}
+      data: {},
+      changeTest: 0
     }
   },
   computed: {
@@ -82,6 +83,7 @@ export default {
       this.abilities = data.abilities
       this.image = data.sprites
       this.type = data.type
+      this.changeTest += 1
       
     } catch (error) {
       console.log(error)
